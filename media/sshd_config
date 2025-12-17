@@ -1,0 +1,11 @@
+
+
+Include /etc/ssh/sshd_config.d/*.conf
+PermitRootLogin no
+PasswordAuthentications no
+KbdInteractiveAuthentication no
+UsePAM no
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_* COLORTERM NO_COLOR
+Subsystem	sftp	/usr/lib/openssh/sftp-server
